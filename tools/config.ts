@@ -57,14 +57,23 @@ export const PATH = {
     ],
     csslib: [
       resolve('bootstrap/dist/css/bootstrap.css'),
-      resolve('bootstrap/dist/css/bootstrap.css.map')
+      resolve('bootstrap/dist/css/bootstrap.css.map'),
+      resolve('font-awesome/css/font-awesome.min.css'),
+      `${APP_SRC}/css/main.css`,
+      `${APP_SRC}/css/sb-admin-2.css`
     ],
     fonts: [
       resolve('bootstrap/dist/fonts/glyphicons-halflings-regular.eot'),
       resolve('bootstrap/dist/fonts/glyphicons-halflings-regular.svg'),
       resolve('bootstrap/dist/fonts/glyphicons-halflings-regular.ttf'),
       resolve('bootstrap/dist/fonts/glyphicons-halflings-regular.woff'),
-      resolve('bootstrap/dist/fonts/glyphicons-halflings-regular.woff2')
+      resolve('bootstrap/dist/fonts/glyphicons-halflings-regular.woff2'),
+      resolve('font-awesome/fonts/FontAwesome.otf'),
+      resolve('font-awesome/fonts/fontawesome-webfont.eot'),
+      resolve('font-awesome/fonts/fontawesome-webfont.svg'),
+      resolve('font-awesome/fonts/fontawesome-webfont.ttf'),
+      resolve('font-awesome/fonts/fontawesome-webfont.woff'),
+      resolve('font-awesome/fonts/fontawesome-webfont.woff2')
     ]
   }
 };

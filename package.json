@@ -73,6 +73,7 @@
     "bootstrap": "^3.3.5",
     "es6-module-loader": "^0.17.8",
     "es6-shim": "^0.33.6",
+    "font-awesome": "^4.4.0",
     "ng2-bootstrap": "^0.44.6",
     "systemjs": "^0.19.4"
   }

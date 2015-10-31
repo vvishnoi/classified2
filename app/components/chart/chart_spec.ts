@@ -7,23 +7,23 @@ import {
 } from 'angular2/testing';
 import {Component, View} from 'angular2/angular2';
 import {DOM} from 'angular2/src/core/dom/dom_adapter';
-import {HomePage} from './home';
+import {ChartPage} from './chart';
 
 export function main() {
-  describe('Home component', () => {
+  describe('chart component', () => {
     it('should work',
       injectAsync([TestComponentBuilder], (tcb: TestComponentBuilder) => {
-        return tcb.overrideTemplate(TestComponent, '<div><home></home></div>')
+        return tcb.overrideTemplate(TestComponent, '<div><chart></chart></div>')
           .createAsync(TestComponent)
           .then((rootTC) => {
-            let homeDOMEl = rootTC.debugElement.componentViewChildren[0].nativeElement;
+            let chartDOMEl = rootTC.debugElement.componentViewChildren[0].nativeElement;
 
-            expect(DOM.querySelectorAll(homeDOMEl, 'h1')[0].textContent).toEqual('Howdy!');
+            expect(DOM.querySelectorAll(chartDOMEl, 'h1')[0].textContent).toEqual('Howdy!');
           });
       }));
   });
 }
 
 @Component({selector: 'test-cmp'})
-@View({directives: [HomePage]})
+@View({directives: [ChartPage]})
 class TestComponent {}

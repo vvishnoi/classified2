@@ -7,7 +7,7 @@ import {
 } from 'angular2/testing';
 import {Component, View} from 'angular2/angular2';
 // import {DOM} from 'angular2/src/core/dom/dom_adapter';
-import {AppCmp} from './app';
+import {App} from './app';
 
 export function main() {
   describe('App component', () => {
@@ -27,5 +27,5 @@ export function main() {
 }
 
 @Component({selector: 'test-cmp'})
-@View({directives: [AppCmp]})
+@View({directives: [App]})
 class TestComponent {}

@@ -7,23 +7,23 @@ import {
 } from 'angular2/testing';
 import {Component, View} from 'angular2/angular2';
 import {DOM} from 'angular2/src/core/dom/dom_adapter';
-import {HomePage} from './home';
+import {ButtonsPage} from './buttons';
 
 export function main() {
-  describe('Home component', () => {
+  describe('buttons component', () => {
     it('should work',
       injectAsync([TestComponentBuilder], (tcb: TestComponentBuilder) => {
-        return tcb.overrideTemplate(TestComponent, '<div><home></home></div>')
+        return tcb.overrideTemplate(TestComponent, '<div><buttons></buttons></div>')
           .createAsync(TestComponent)
           .then((rootTC) => {
-            let homeDOMEl = rootTC.debugElement.componentViewChildren[0].nativeElement;
+            let buttonsDOMEl = rootTC.debugElement.componentViewChildren[0].nativeElement;
 
-            expect(DOM.querySelectorAll(homeDOMEl, 'h1')[0].textContent).toEqual('Howdy!');
+            expect(DOM.querySelectorAll(buttonsDOMEl, 'h1')[0].textContent).toEqual('Howdy!');
           });
       }));
   });
 }
 
 @Component({selector: 'test-cmp'})
-@View({directives: [HomePage]})
+@View({directives: [ButtonsPage]})
 class TestComponent {}
