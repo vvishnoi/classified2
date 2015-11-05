@@ -28,6 +28,7 @@ import {PanelsWellsPage} from '../panels-wells/panels-wells';
   directives: [Header, ROUTER_DIRECTIVES]
 })
 @RouteConfig([
+  { path: '/', redirectTo: '/home' },
   { path: '/home', component: HomePage, as: 'Dashboard.home' },
   { path: '/form', component: FormPage, as: 'Dashboard.form' },
   { path: '/blank', component: HomePage, as: 'Dashboard.blank' },
