@@ -155,6 +155,10 @@ npm run build.test.watch      # 1st window
 npm run karma.start           # 2nd window
 ```
 
+# Presentations
+
+Rocky Mountain Angular Users Group 10-Nov-2015: [Transitioning from Server Side to Client Side Web Development with Angular 2](http://angularshowcase.github.io/ng2-bootstrap-sbadmin/slides/20151110/index.html)
+
 # Contributing
 
 Please see the [CONTRIBUTING](https://github.com/AngularShowcase/ng2-bootstrap-sbadmin/blob/master/CONTRIBUTING.md) file for guidelines.
